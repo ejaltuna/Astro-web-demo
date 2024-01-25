@@ -1,0 +1,104 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+<!-- 
+<a
+  class="group border border-white/30 relative cursor-pointer overflow-hidden whitespace-nowrap px-6 py-4 [background:var(--bg)] [border-radius:var(--radius)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_8px_rgba(62,61,117,0.7)]"
+  href="/#regalos"
+  ><svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+      d="M3 8m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z"
+    ></path><path d="M12 8l0 13"></path><path
+      d="M19 12v7a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-7"></path><path
+      d="M7.5 8a2.5 2.5 0 0 1 0 -5a4.8 8 0 0 1 4.5 5a4.8 8 0 0 1 4.5 -5a2.5 2.5 0 0 1 0 5"
+    ></path></svg
+  >{title}</a
+> -->
+
+<div
+  class="flex flex-col items-center justify-center gap-4 mx-auto scale-90 md:flex-row sm:scale-100"
+>
+  <button
+    style="--spread:90deg;--shimmer-color:#ffffff;--radius:100px;--speed:1.5s;--cut:0.1em;--bg:radial-gradient(ellipse 80% 50% at 50% 120%,rgba(62, 61, 117),rgba(18, 18, 38))"
+    class="group border border-white/30 relative cursor-pointer overflow-hidden whitespace-nowrap px-6 py-4 [background:var(--bg)] [border-radius:var(--radius)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_8px_rgba(62,61,117,0.7)]"
+    ><div class="absolute inset-0 overflow-visible [container-type:size]">
+      <div
+        class="absolute inset-0 h-[100cqh] animate-slide [aspect-ratio:1] [border-radius:0] [mask:none]"
+      >
+        <div
+          class="absolute inset-[-100%] w-auto rotate-0 animate-spin [background:conic-gradient(from_calc(270deg-(var(--spread)*0.5)),transparent_0,hsl(0_0%_100%/1)_var(--spread),transparent_var(--spread))] [translate:0_0]"
+        >
+        </div>
+      </div>
+    </div><div
+      class="absolute [background:var(--bg)] [border-radius:var(--radius)] [inset:var(--cut)]"
+    >
+    </div><div
+      class="relative z-10 flex items-center justify-center text-lg font-semibold text-white pointer-events-none md:text-xl"
+    >
+      <svg
+        class="mr-3"
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+        stroke-width="1"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+          d="M15 5l0 2"></path><path d="M15 11l0 2"></path><path d="M15 17l0 2"
+        ></path><path
+          d="M5 5h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-3a2 2 0 0 0 0 -4v-3a2 2 0 0 1 2 -2"
+        ></path></svg
+      >¡Consigue tu entrada GRATIS!
+    </div></button
+  ><button
+    style="--spread:90deg;--shimmer-color:#ffffff;--radius:100px;--speed:0;--cut:0;--bg:radial-gradient(ellipse 80% 50% at 50% 120%,rgba(62, 61, 117),rgba(18, 18, 38))"
+    class="group border border-white/30 relative cursor-pointer overflow-hidden whitespace-nowrap px-6 py-4 [background:var(--bg)] [border-radius:var(--radius)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_8px_rgba(62,61,117,0.7)] hue-rotate-180"
+    ><div class="absolute inset-0 overflow-visible [container-type:size]">
+      <div
+        class="absolute inset-0 h-[100cqh] animate-slide [aspect-ratio:1] [border-radius:0] [mask:none]"
+      >
+        <div
+          class="absolute inset-[-100%] w-auto rotate-0 animate-spin [background:conic-gradient(from_calc(270deg-(var(--spread)*0.5)),transparent_0,hsl(0_0%_100%/1)_var(--spread),transparent_var(--spread))] [translate:0_0]"
+        >
+        </div>
+      </div>
+    </div><div
+      class="absolute [background:var(--bg)] [border-radius:var(--radius)] [inset:var(--cut)]"
+    >
+    </div><div
+      class="relative z-10 flex items-center justify-center text-lg font-semibold text-white pointer-events-none md:text-xl"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="mr-3"
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+          d="M11.5 21h-5.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v6"
+        ></path><path d="M16 3v4"></path><path d="M8 3v4"></path><path
+          d="M4 11h16"></path><path d="M15 19l2 2l4 -4"></path></svg
+      >Guarda la fecha del evento
+    </div></button>
+</div>

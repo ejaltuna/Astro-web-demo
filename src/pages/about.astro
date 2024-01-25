@@ -1,0 +1,42 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header/Header.astro";
+---
+
+<Layout title="Nosotros">
+  <main> 
+    <h1>Nosotros <span class="text-gradient">About</span></h1>
+
+    <p class="text-pretty">
+      Somos un duo de Ingeriosos en Sistemas Venezolanos que decidieron desarrollar un software 100% CLOUD para atender las necesidades del mercado latinoamericano, en cuanto a una herramienta capaz de controlar todos los procesos de un laboratorio pequeño, mediano y grande, con la capacidad de ejecutarse en simulteneo en distintas sucursales y tener conectividad con equipos automatizados. Además de ello entendimos las necesidades actuales de la informática, por lo cual el sistema es compatible con plataformas android y distintos navegadores web (Mozilla y Google Chrome). Cabe resaltar que hemos podido ayudar a laboratorios en 8 Paises de latinoamerica y sumamos mas de 90 entidades que han confiado en nuestro trabajo.
+
+    </p>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+</style>

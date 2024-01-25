@@ -2,11 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Header from '../components/Header/Header.astro';
+import HeaderButton from '../components/Header/HeaderButton.astro';
 ---
 
 <Layout title="Pascal-Labs">
-	<main>
-		<Header/>
+	<main  class="container"> 
 		<svg
 			class="astro-a"
 			width="495"
@@ -35,14 +35,15 @@ import Header from '../components/Header/Header.astro';
 				</linearGradient>
 			</defs>
 		</svg>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-		
-		</ul>
+		<div class="mt-20 ">
+
+			<h1>Bienvenido a  <span class="text-gradient">Pascal Labs</span></h1>
+			<p class="instructions p-6 w-1/2 mx-auto">
+				To get started, open the directory <code>src/pages</code> in your project.<br />
+				<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+			</p>
+		</div>
+		<HeaderButton/>
 	</main>
 </Layout>
 
@@ -50,7 +51,7 @@ import Header from '../components/Header/Header.astro';
 	main {
 		margin: auto;
 		padding: 1rem;
-		width: 800px;
+		/* width: 800px; */
 		max-width: calc(100% - 2rem);
 		color: white;
 		font-size: 20px;
@@ -83,7 +84,7 @@ import Header from '../components/Header/Header.astro';
 		margin-bottom: 2rem;
 		border: 1px solid rgba(var(--accent-light), 25%);
 		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
+		 
 		border-radius: 8px;
 	}
 	.instructions code {

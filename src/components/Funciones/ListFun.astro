@@ -1,18 +1,29 @@
 ---
 import ItemFuncion from "./ItemFun.astro";
-
+import ChartDots2 from "../icons/chart-dots-2.astro";
 
 ---
 
 
 <div>
 <h1>
-    
+    Items
 </h1>    
+
+<div role="list" class="grid md:grid-cols-3 grid-cols-1 gap-6 px-6 py-4">
+    
+    
+    <ItemFuncion title="./CardBeneficio.astro" icon={ChartDots2}/>
     <ItemFuncion title="" icon=""/>
     <ItemFuncion title="" icon=""/>
     <ItemFuncion title="" icon=""/>
     <ItemFuncion title="" icon=""/>
     <ItemFuncion title="" icon=""/>
-    <ItemFuncion title="" icon=""/>
+  </div>
+ 
+
+
+
+
+
 </div>

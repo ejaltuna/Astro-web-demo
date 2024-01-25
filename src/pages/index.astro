@@ -3,10 +3,12 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Header from '../components/Header/Header.astro';
 import HeaderButton from '../components/Header/HeaderButton.astro';
+import Beneficios from '../components/Beneficios/Beneficios.astro';
+import Funciones from '../components/Funciones/Funcion.astro';
 ---
 
 <Layout title="Pascal-Labs">
-	<main  class="container"> 
+	<main  class="container grid gap-y-4"> 
 		<svg
 			class="astro-a"
 			width="495"
@@ -36,7 +38,6 @@ import HeaderButton from '../components/Header/HeaderButton.astro';
 			</defs>
 		</svg>
 		<div class="mt-20 ">
-
 			<h1>Bienvenido a  <span class="text-gradient">Pascal Labs</span></h1>
 			<p class="instructions p-6 w-1/2 mx-auto">
 				To get started, open the directory <code>src/pages</code> in your project.<br />
@@ -44,6 +45,10 @@ import HeaderButton from '../components/Header/HeaderButton.astro';
 			</p>
 		</div>
 		<HeaderButton/>
+
+		<Beneficios/>
+
+		<Funciones/>
 	</main>
 </Layout>
 

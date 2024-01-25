@@ -1,0 +1,48 @@
+---
+import CardBeneficio from "./CardBeneficio.astro"
+
+
+
+---
+
+
+
+
+<main id='beneficios' class=" container" >
+    <h1 class="text-2xl mt-20">
+        Beneficios
+    </h1>
+     
+    <div class="grid md:grid-cols-3 grid-cols-1 gap-6 px-6 py-4">
+
+        <CardBeneficio title='Imagen Profesional' label='Proyectamos a tu laboratorio una imagen más profesional, lo que genera lealtad y confianza en tus pacientes y personal de referencia.'/>
+        <CardBeneficio title='Minimiza el error humano' label='Con la implementación de interfaces a equipos automatizados y en caso de resultados manuales, contamos con unas alertas de valores mínimos y máximos.'/>
+        <CardBeneficio title='100% Seguro' label='Acceso a través de protocolo HTTPS (Comunicación Segura). Asignación de permisos por tipo de usuarios. Respaldos automáticos diariamente.'/>
+        <CardBeneficio title='Actualizaciones Constantes' label='Debido a que es un sistema Cloud estamos actualizando constantemente a los estándares informáticos, también innovamos en soluciones y mejoras en los procesos.'/>
+        <CardBeneficio title='Resultados en línea' label='Publica los resultados en la web para que tus pacientes, médicos y laboratorios referidos puedan descargarlos desde su computadora o celular.'/>
+        <CardBeneficio title='Costos accesibles' label='No inviertas miles de dólares en hardware y un sistema de escritorio obsoletos. Con nuestro sistema solo necesitaras conexión a internet de 2mb estable y navegador web Chrome o Firefox.'/> 
+    </div>
+   
+
+</main>
+
+
+<style> 
+
+main {
+		margin: auto;
+		padding: 1rem;
+		/* width: 800px; */
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+}
+    </style>
